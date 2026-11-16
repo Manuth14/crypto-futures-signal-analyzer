@@ -1,11 +1,11 @@
-# Crypto Futures Signal Analyzer v1.3
+# Crypto Futures Signal Analyzer
 
 Read-only Python signal engine plus optional local Ollama AI explanation. **No trading or order placement.** Uses public completed Binance USD-M futures candles. No API key or Python third-party packages required.
 
 ## Windows Quick Start
 
 ```powershell
-cd path\to\crypto-futures-signal-analyzer-v1.3
+cd path\to\crypto-futures-signal-analyzer
 python -m unittest discover -s tests -v
 python scripts/analyze.py --symbol BTCUSDT
 ollama list
@@ -28,6 +28,6 @@ Install Ollama separately from https://ollama.com/download/windows and pull the 
 
 Python unit tests are offline. Live API access depends on network and exchange availability. Ollama explanations are probabilistic and should be checked against JSON `signal` and `conditions`. Claude Code and Agensi publishing compatibility are not yet verified. Research/education only; not financial advice.
 
-## v1.3: reliable explanations
+## Reliable explanations
 
 `local_agent.py` now always prints an authoritative, deterministic explanation based on the engine's own boolean condition flags, including both candle timeframes. It rejects signal/condition mismatches. Ollama only provides an **optional, non-authoritative indicator glossary**, never live signal interpretation. If Ollama is unavailable, the verified report still prints. This is a local demonstration, **not** verified Agensi or Claude Code integration.

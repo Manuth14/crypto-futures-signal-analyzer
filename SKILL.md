@@ -2,7 +2,7 @@
 name: crypto-futures-signal-analyzer
 description: Read-only Binance USD-M futures analysis using 15m EMA21 trend, 1m EMA9/EMA21, simple rolling RSI14 and volume MA10; explain deterministic BUY/SELL/HOLD without placing trades.
 ---
-# Crypto Futures Signal Analyzer (v1.3)
+# Crypto Futures Signal Analyzer
 
 Use `python scripts/analyze.py --symbol BTCUSDT` from this project root (substitute the requested USDT pair). The CLI produces JSON based on completed public Binance USD-M futures candles. Requires Python 3 and outbound network access. Use `--fixture path/to/file.json` for offline data containing `candles_1m` and `candles_15m`. Never invent live market data when the tool fails.
 
